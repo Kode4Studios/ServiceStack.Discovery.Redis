@@ -12,18 +12,13 @@ namespace TestService1.Core
     {
         public AppHost() : base("TestService1", typeof(AppHost).Assembly)
         { }
-        private string HostAt;
-        public AppHost(string hostAt) : this()
-        {
-            HostAt = hostAt;
-        }
 
         public override void Configure(Container container)
         {
             container.Register<IRedisClientsManager>(new RedisManagerPool("localhost:6379", new RedisPoolConfig { MaxPoolSize = 100, }));
             SetConfig(new HostConfig
             {
-                WebHostUrl = HostAt.Replace("*", Environment.MachineName),
+                WebHostUrl = "http://localhost:5000",
             });
             LoadPlugin(new RedisServiceDiscoveryFeature()
             {
