@@ -7,6 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "netcore", "netcore", "{3AEA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Discovery.Redis.Core", "netcore\ServiceStack.Discovery.Redis.Core\ServiceStack.Discovery.Redis.Core.csproj", "{105218C8-FEDD-4FD4-A325-32B18A387D84}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{425D269A-CF3F-4ABA-BD54-92B27B5F4E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestService2.Core", "tests\TestService2.Core\TestService2.Core.csproj", "{263FA010-982F-43D1-A35B-EA30C053C2A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestService1.Core", "tests\TestService1.Core\TestService1.Core.csproj", "{5680129B-8B27-44CB-AA78-EA35A49C34CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +38,34 @@ Global
 		{105218C8-FEDD-4FD4-A325-32B18A387D84}.Release|x64.Build.0 = Release|x64
 		{105218C8-FEDD-4FD4-A325-32B18A387D84}.Release|x86.ActiveCfg = Release|x86
 		{105218C8-FEDD-4FD4-A325-32B18A387D84}.Release|x86.Build.0 = Release|x86
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Debug|x64.ActiveCfg = Debug|x64
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Debug|x64.Build.0 = Debug|x64
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Debug|x86.ActiveCfg = Debug|x86
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Debug|x86.Build.0 = Debug|x86
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Release|x64.ActiveCfg = Release|x64
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Release|x64.Build.0 = Release|x64
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Release|x86.ActiveCfg = Release|x86
+		{263FA010-982F-43D1-A35B-EA30C053C2A9}.Release|x86.Build.0 = Release|x86
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Debug|x64.ActiveCfg = Debug|x64
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Debug|x64.Build.0 = Debug|x64
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Debug|x86.ActiveCfg = Debug|x86
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Debug|x86.Build.0 = Debug|x86
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Release|x64.ActiveCfg = Release|x64
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Release|x64.Build.0 = Release|x64
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Release|x86.ActiveCfg = Release|x86
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{105218C8-FEDD-4FD4-A325-32B18A387D84} = {3AEA4112-BD59-43B3-A663-BBAD3AE51AA2}
+		{263FA010-982F-43D1-A35B-EA30C053C2A9} = {425D269A-CF3F-4ABA-BD54-92B27B5F4E79}
+		{5680129B-8B27-44CB-AA78-EA35A49C34CA} = {425D269A-CF3F-4ABA-BD54-92B27B5F4E79}
 	EndGlobalSection
 EndGlobal

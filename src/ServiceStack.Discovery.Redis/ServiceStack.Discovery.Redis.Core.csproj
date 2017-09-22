@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net451;net462;</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net451' or '$(TargetFramework)' == 'net462'">
+    <PackageReference Include="ServiceStack" Version="4.5.14"/>
+    <PackageReference Include="ServiceStack.Client" Version="4.5.14"/>
+    <PackageReference Include="ServiceStack.Common" Version="4.5.14"/>
+    <PackageReference Include="ServiceStack.Interfaces" Version="4.5.14"/>
+    <PackageReference Include="ServiceStack.Redis" Version="4.5.14"/>
+    <PackageReference Include="ServiceStack.Text" Version="4.5.14"/>
+    <PackageReference Include="ServiceStack.Server" Version="4.5.14"/>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="ServiceStack.Core" Version="1.0.44"/>
+    <PackageReference Include="ServiceStack.Client.Core" Version="1.0.44"/>
+    <PackageReference Include="ServiceStack.Common.Core" Version="1.0.44"/>
+    <PackageReference Include="ServiceStack.Interfaces.Core" Version="1.0.44"/>
+    <PackageReference Include="ServiceStack.Redis.Core" Version="1.0.44"/>
+    <PackageReference Include="ServiceStack.Text.Core" Version="1.0.44"/>
+    <PackageReference Include="ServiceStack.Server.Core" Version="1.0.44"/>
+  </ItemGroup>
+</Project>
